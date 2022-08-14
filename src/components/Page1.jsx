@@ -1,39 +1,46 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import icon from "./Images/icon.png";
+import { getProd } from "./Redux/Action";
 
-const Page1 = () => {
 
-    const [plants, setPlants] = useState([])
+export const Page1 = () => {
+  const products = useSelector((state) => state.allProducts.products);
+  console.log("data", products);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-    const foodData = async()=> {
-
-  const data = await fetch("http://localhost:8000/plants")
-  setPlants(await data.json())
-    }
-    useEffect(()=>{foodData()},[])
+  useEffect(() => {
+    dispatch(getProd());
+  }, []);
   return (
     <div>
-      {plants.map((item)=> {
-        return(
-            
-            <div className="subBox" key={item.code}>
-       
-            <Link to={`/plants/${item.code}`}>
-                      <div className="" >
-                      <div className="">
-                        {/* <img src={img1} alt={name} /> */}
-                      </div>
-                      <div className="content">
-                       <div> {item.product_name} ({item.generic_name})</div>
-                      </div>
-                         
-                    </div>
-            </Link>
-          </div>
-        )
-      })}
-    </div>
-  )
-}
+      <div className="flex green">
+        <h2>TheFoodList</h2>
 
-export default Page1
+      </div>
+      <div className="flex">
+        <div className="tLeft">Food List</div>
+        <div className="tRight">Favourites</div>
+      </div>
+
+      <div className="">
+        {products.map((el) => (
+          <div
+            onClick={() => navigate(`/${el.id}`)}
+            className="flex"
+            key={el.id}
+          >
+            <img src={icon} alt="" className="" />
+            <div className="">
+              <h2>
+                {el.product_name} ({el.generic_name})
+              </h2>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};

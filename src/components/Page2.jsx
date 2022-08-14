@@ -1,34 +1,40 @@
-import React, { useEffect, useState } from 'react'
+import { useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import Icon from "./Images/icon.png";
+import { selectedProd } from "./Redux/Action";
 
-const Page2 = () => {
+export const Page2 = () => {
+  const { id } = useParams();
+  let product = useSelector((state) => state.product);
 
-
-
-    // useEffect(() => {
-    //       axios.get(`https://meesho123.herokuapp.com/products/${id}`)
-    //       .then((response) => {
-    //         console.log(response.data);
-    //         // setProduct(...[response.data]);
-    //       });
-    //     }, []);
-
-        const [plants, setPlants] = useState([])
-console.log("dataplants",plants)
-        const foodData = async()=> {
-    
-      const data = await fetch(`http://localhost:8000/plants/${code}`)
-      setPlants(await data.json())
-        }
-        useEffect(()=>{foodData()},[])
-
-
-
-
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if (id && id !== "") dispatch(selectedProd(id));
+  }, []);
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <div className="">
 
-export default Page2
+      <div className="flex green">
+        <h2>TheFoodList</h2>
+      </div>
+      <div className="flex">
+        <img src={Icon} alt="" className="" />
+        <h3 className="">{product.product_name}</h3>
+      </div>
+
+      <table>
+        <tbody>
+          {Object.keys(product).map((key, index) => {
+            return (
+              <tr key={index}>
+                <td className="td1" >{key}</td>
+                <td>{product[key]}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+};

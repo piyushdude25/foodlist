@@ -1,7 +1,7 @@
 {
-  "plants": [
+  "foods": [
     {
-      "code": 6001087316415,
+      "id": 6001087316415,
       "url": "http://world-en.openfoodfacts.org/product/6001087316415/flora-regular-60-fat-spread",
       "creator": "spl",
       "product_name": "Flora Regular 60% Fat Spread",
@@ -28,7 +28,7 @@
       "sodium_100g": 0.24
     },
     {
-      "code": 3245550078704,
+      "id": 3245550078704,
       "url": "http://world-en.openfoodfacts.org/product/3245550078704/snack-poppe-saveur-paprika-too-good",
       "creator": "openfoodfacts-contributors",
       "product_name": "Snack poppé saveur paprika",
@@ -55,7 +55,7 @@
       "sodium_100g": 0.7
     },
     {
-      "code": 3760056412697,
+      "id": 3760056412697,
       "url": "http://world-en.openfoodfacts.org/product/3760056412697/sardines-a-l-huile-de-homard-groix-nature",
       "creator": "stephane",
       "product_name": "Sardines à l'Huile de Homard",
@@ -82,7 +82,7 @@
       "sodium_100g": 0.0614
     },
     {
-      "code": 8480000773555,
+      "id": "8480000773555",
       "url": "http://world-en.openfoodfacts.org/product/8480000773555/lino-dorado-deliplus",
       "creator": "javichu",
       "product_name": "Lino dorado &quot;Deliplus&quot;",
@@ -109,7 +109,7 @@
       "sodium_100g": 0
     },
     {
-      "code": 3273227483476,
+      "id": 3273227483476,
       "url": "http://world-en.openfoodfacts.org/product/3273227483476/postre-de-soja-sojasun-melocoton-2-uds",
       "creator": "javichu",
       "product_name": "Postre de soja &quot;Sojasun&quot; Melocotón (2 Uds)",
@@ -136,7 +136,7 @@
       "sodium_100g": 0.03
     },
     {
-      "code": 3576560500009,
+      "id": 3576560500009,
       "url": "http://world-en.openfoodfacts.org/product/3576560500009/tartimi-ail-fines-herbes-le-sojami",
       "creator": "sylphe",
       "product_name": "Tartimi Ail & Fines Herbes",
@@ -163,7 +163,7 @@
       "sodium_100g": 0.61
     },
     {
-      "code": 3273227485234,
+      "id": 3273227485234,
       "url": "http://world-en.openfoodfacts.org/product/3273227485234/postre-de-soja-sojasun-chocolate",
       "creator": "openfoodfacts-contributors",
       "product_name": "Postre de soja &quot;Sojasun&quot; Chocolate",
@@ -190,7 +190,7 @@
       "sodium_100g": 0.06
     },
     {
-      "code": 3273227583398,
+      "id": 3273227583398,
       "url": "http://world-en.openfoodfacts.org/product/3273227583398/postre-de-soja-sojasun-frutas-del-bosque-2-uds",
       "creator": "javichu",
       "product_name": "Postre de soja &quot;Sojasun&quot; Frutas del bosque (2 Uds)",
@@ -217,7 +217,7 @@
       "sodium_100g": 0.04
     },
     {
-      "code": 3273227482059,
+      "id": 3273227482059,
       "url": "http://world-en.openfoodfacts.org/product/3273227482059/postre-de-soja-sojasun-albaricoque-y-guayaba",
       "creator": "javichu",
       "product_name": "Postre de soja &quot;Sojasun&quot; Albaricoque y guayaba",
@@ -244,7 +244,7 @@
       "sodium_100g": 0.03
     },
     {
-      "code": 3576560008000,
+      "id": 3576560008000,
       "url": "http://world-en.openfoodfacts.org/product/3576560008000/tartine-moi-poivre-5-baies-sojabio",
       "creator": "openfoodfacts-contributors",
       "product_name": "Tartine & moi poivre 5 baies",
@@ -271,7 +271,7 @@
       "sodium_100g": 0.6299212598
     },
     {
-      "code": 3273220085349,
+      "id": 3273220085349,
       "url": "http://world-en.openfoodfacts.org/product/3273220085349/dessert-vegetal-chocolat-4-pots-sojasun",
       "creator": "lalorelei",
       "product_name": "Dessert végétal, Chocolat (4 Pots)",
@@ -298,7 +298,7 @@
       "sodium_100g": 0.06
     },
     {
-      "code": 3256221712254,
+      "id": 3256221712254,
       "url": "http://world-en.openfoodfacts.org/product/3256221712254/huile-de-colza-u",
       "creator": "nash",
       "product_name": "huile de colza",
@@ -325,7 +325,7 @@
       "sodium_100g": 0
     },
     {
-      "code": "0063667090067",
+      "id": "0063667090067",
       "url": "http://world-en.openfoodfacts.org/product/0063667090067/fortified-almond-beverage-natura",
       "creator": "hummingbrid",
       "product_name": "Fortified Almond Beverage",
@@ -352,7 +352,7 @@
       "sodium_100g": 0.042
     },
     {
-      "code": 3265472161001,
+      "id": 3265472161001,
       "url": "http://world-en.openfoodfacts.org/product/3265472161001/isio-4-lesieur",
       "creator": "jitrixis",
       "product_name": "isio 4",
@@ -379,7 +379,7 @@
       "sodium_100g": 0
     },
     {
-      "code": 3560070517060,
+      "id": 3560070517060,
       "url": "http://world-en.openfoodfacts.org/product/3560070517060/huile-de-noix-riche-en-omega-3-carrefour",
       "creator": "miles67off",
       "product_name": "Huile de noix riche en oméga 3 Carrefour",
@@ -406,7 +406,7 @@
       "sodium_100g": 0
     },
     {
-      "code": 8480000348616,
+      "id": "8480000348616",
       "url": "http://world-en.openfoodfacts.org/product/8480000348616/soja-frita-hacendado",
       "creator": "javichu",
       "product_name": "Soja frita &quot;Hacendado&quot;",
@@ -433,7 +433,7 @@
       "sodium_100g": 1.4
     },
     {
-      "code": 3273227485302,
+      "id": 3273227485302,
       "url": "http://world-en.openfoodfacts.org/product/3273227485302/postre-de-soja-sojasun-plaisir-praline",
       "creator": "javichu",
       "product_name": "Postre de soja &quot;Sojasun&quot; Plaisir Praliné",
