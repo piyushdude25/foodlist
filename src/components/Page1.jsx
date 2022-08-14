@@ -32,7 +32,7 @@ export const Page1 = () => {
             className="flex"
             key={el.id}
           >
-            <img src={icon} alt="" className="" />
+            <img src={icon} alt="" className="icons" />
             <div className="">
               <h2>
                 {el.product_name} ({el.generic_name})

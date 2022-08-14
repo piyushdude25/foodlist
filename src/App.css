@@ -9,13 +9,12 @@
 
 }
 
-@media only screen and (min-width: 0px) and (max-width: 376px) {
+@media only screen and (min-width: 0px) and (max-width: 500px) {
   .icons {
-    margin-top: 6%;
+    margin: 10% 5% 0 5% ;
+   height: 80%;
   }
-  .data_container {
-    display: flex;
-  }
+ 
 }
 
 .tLeft, .tRight{
@@ -33,4 +32,8 @@
   font-size: 130%;
   padding: 0 0 0 3%;
   text-transform: capitalize;
+}
+.icons {
+  margin: 2% ;
+ height: 80%;
 }

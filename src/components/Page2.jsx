@@ -19,7 +19,7 @@ export const Page2 = () => {
         <h2>TheFoodList</h2>
       </div>
       <div className="flex">
-        <img src={Icon} alt="" className="" />
+        <img src={Icon} alt="" className="icons" />
         <h3 className="">{product.product_name}</h3>
       </div>
 
